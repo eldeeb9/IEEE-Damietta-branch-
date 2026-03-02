@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE Damietta Student Branch</title>
+    <link rel="stylesheet" href="dd.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- الهيدر -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="photo_2026-03-03_00-12-02.jpg" alt="IEEE">
+                <span>IEEE Damietta</span>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a class="nav-link active" data-page="home">الرئيسية</a></li>
+                    <li><a class="nav-link" data-page="about">عن الفرع</a></li>
+                    <li><a class="nav-link" data-page="events">الفعاليات</a></li>
+                    <li><a class="nav-link" data-page="team">الأعضاء</a></li>
+                    <li><a class="nav-link btn-join" data-page="join">انضم الآن</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- الصفحة الرئيسية -->
+    <section id="home" class="page-section active">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>مرحباً بك في IEEE فرع دمياط</h1>
+                <p>نقدم أفضل الفرص التعليمية والتقنية لطلاب الهندسة</p>
+                <button class="btn-primary" onclick="showPage('join')">انضم الآن</button>
+            </div>
+        </section>
+        
+        <section class="section">
+            <div class="container">
+                <div class="about-content">
+                    <h2>من نحن</h2>
+                    <p>فرع طلاب IEEE في جامعة دمياط منظمة طلابية تهدف لتطوير المهارات التقنية والقيادية لطلاب الهندسة.</p>
+                    <button class="btn-primary" onclick="showPage('about')">اعرف المزيد</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background: #f5f5f5;">
+            <div class="container">
+                <h2>الفعاليات القادمة</h2>
+                <div class="events-grid">
+                    <div class="event-card">
+                        <span class="date"> 2026</span>
+                        <h3>ورشة عمل Python</h3>
+                        <p>تعلم البرمجة بلغة بايثون من الصفر</p>
+                        <button class="btn-event" onclick="showPage('events')">التفاصيل</button>
+                    </div>
+                    <div class="event-card">
+                        <span class="date">2026</span>
+                        <h3>مسابقة الروبوت</h3>
+                        <p>شارك في مسابقة الروبوت الوطنية</p>
+                        <button class="btn-event" onclick="showPage('events')">التفاصيل</button>
+                    </div>
+                    <div class="event-card">
+                        <span class="date">2026</span>
+                        <h3>IEEE Xtreme</h3>
+                        <p>مسابقة البرمجة العالمية</p>
+                        <button class="btn-event" onclick="showPage('events')">التفاصيل</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- صفحة من نحن -->
+    <section id="about" class="page-section">
+        <section class="page-hero">
+            <h1>عن الفرع</h1>
+            <p>تعرف أكثر على IEEE بجامعة دمياط</p>
+        </section>
+        
+        <section class="section">
+            <div class="container">
+                <div class="about-content">
+                    <h2>منذ عام 2026</h2>
+                    <p>تأسس فرع طلاب IEEE في جامعة دمياط بهدف نشر الوعي التقني.</p>
+                    <ul class="about-list">
+                        <li>✅ ورش عمل تقنية </li>
+                        <li>✅ورشه اردوينو   </li>
+                        <li>✅ فرص تدريب في شركات كبرى</li>
+                        <li>✅ شهادات معتمدة دولياً</li>
+                    </ul>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-box"><i class="fas fa-users"></i><h3></h3><p>عضو نشط</p></div>
+                    <div class="stat-box"><i class="fas fa-calendar-alt"></i><h3>+</h3><p>فعالية سنوية </p></div>
+                    <div class="stat-box"><i class="fas fa-trophy"></i><h3>+</h3><p> </p>جائزة محلية</div>
+                    <div class="stat-box"><i class="fas fa-handshake"></i><h3>+</h3><p>شراكات</p></div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- صفحة الفعاليات -->
+    <section id="events" class="page-section">
+        <section class="page-hero">
+            <h1>الفعاليات</h1>
+            <p>استكشف أحدث الفعاليات والمسابقات</p>
+        </section>
+        
+        <section class="section">
+            <div class="container">
+                <div class="events-grid">
+                    <div class="event-card">
+                        <span class="date">2026</span>
+                        <h3>ورشة عمل Python</h3>
+                        <p>تعلم البرمجة بلغة بايثون.</p>
+                        <button class="btn-event">سجل الآن</button>
+                    </div>
+                    <div class="event-card">
+                        <span class="date">2026</span>
+                        <h3>ورشه اردوينو </h3>
+                        <p>شارك واتعلم.</p>
+                        <a href="https://www.facebook.com/share/p/181uNSXeoL/?mibextid=wwXIfr" target="_blank" class="btn-event">سجل الآن</a>
+
+                    </div>
+                    <div class="event-card">
+                        <span class="date">2026</span>
+                        <h3>IEEE Xtreme</h3>
+                        <p>مسابقة البرمجة العالمية.</p>
+                        <button class="btn-event">سجل الآن</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- صفحة الأعضاء -->
+    <section id="team" class="page-section">
+        <section class="page-hero">
+            <h1>فريق العمل</h1>
+            <p>تعرف على فريق فرع IEEE بدمياط</p>
+        </section>
+        
+        <section class="section">
+            <div class="container">
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="photo"><i class="fas fa-user"></i></div>
+                        <h3></h3>
+                        <p class="role">President</p>
+                        <p class="year"> </p>
+                    </div>
+                    <div class="team-card">
+                        <div class="photo"><i class="fas fa-user"></i></div>
+                        <h3> </h3>
+                        <p class="role">Vice President</p>
+                        <p class="year"> </p>
+                    </div>
+                    <div class="team-card">
+                        <div class="photo"><i class="fas fa-user"></i></div>
+                        <h3> </h3>
+                        <p class="role">Secretary</p>
+                        <p class="year">- </p>
+                    </div>
+                    <div class="team-card">
+                        <div class="photo"><i class="fas fa-user"></i></div>
+                        <h3> </h3>
+                        <p class="role">Treasurer</p>
+                        <p class="year"></p>
+                    </div>
+                    <div class="team-card">
+                        <div class="photo"><i class="fas fa-user"></i></div>
+                        <h3> </h3>
+                        <p class="role">Technical Head</p>
+                        <p class="year"> </p>
+                    </div>
+                    <div class="team-card">
+                        <div class="photo"><i class="fas fa-user"></i></div>
+                        <h3> </h3>
+                        <p class="role"> </p>
+                        <p class="year"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- صفحة الانضمام -->
+    <section id="join" class="page-section">
+        <section class="page-hero">
+            <h1>انضم إلينا</h1>
+            <p>كون جزءاً من أكبر مجتمع تقني للطلاب</p>
+        </section>
+        
+        <section class="section">
+            <div class="container">
+                <div class="join-grid">
+                    <div class="join-info">
+                        <h2>مميزات العضوية</h2>
+                        <ul class="benefits">
+                            <li><i class="fas fa-certificate"></i><div><strong>شهادة معتمدة</strong><p>من IEEE العالمية</p></div></li>
+                            <li><i class="fas fa-laptop-code"></i><div><strong>ورش مجانية</strong><p>جميع الورش مجانية</p></div></li>
+                            <li><i class="fas fa-trophy"></i><div><strong>المسابقات</strong><p>شارك واربح</p></div></li>
+                            <li><i class="fas fa-network-wired"></i><div><strong>شبكة علاقات</strong><p>تواصل مع مهندسين</p></div></li>
+                            <li><i class="fas fa-briefcase"></i><div><strong>فرص تدريب</strong><p>في شركات رائدة</p></div></li>
+                        </ul>
+                    </div>
+<!--                     
+                    <div class="join-form">
+                        <h3>نموذج التسجيل</h3>
+                        <form onsubmit="submitForm(event)">
+                            <input type="text" placeholder="الاسم الكامل" required>
+                            <input type="email" placeholder="البريد الإلكتروني" required>
+                            <input type="tel" placeholder="رقم الهاتف" required>
+                            <input type="text" placeholder="الجامعة" required>
+                            <select required>
+                                <option value="">اختر الكلية</option>
+                                <option>هندسة حاسبات</option>
+                                <option>هندسة كهربائية</option>
+                                <option>هندسة ميكانيكية</option>
+                                <option>هندسة مدنية</option>
+                            </select>
+                            <select required>
+                                <option value="">السنة الدراسية</option>
+                                <option>فرقة أولى</option>
+                                <option>فرقة ثانية</option>
+                                <option>فرقة ثالثة</option>
+                                <option>فرقة رابعة</option>
+                            </select> -->
+                            <!-- <button type="submit">إرسال الطلب</button> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- الفوتر -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/1E1xosorsF/?mibextid=wwXIfr"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>© 2026 IEEE Damietta Student Branch</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function showPage(pageId) {
+            var pages = document.querySelectorAll('.page-section');
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].classList.remove('active');
+            }
+            
+            var links = document.querySelectorAll('.nav-link');
+            for (var i = 0; i < links.length; i++) {
+                links[i].classList.remove('active');
+            }
+            
+            var targetPage = document.getElementById(pageId);
+            if (targetPage) {
+                targetPage.classList.add('active');
+            }
+            
+            var activeLink = document.querySelector('[data-page="' + pageId + '"]');
+            if (activeLink) {
+                activeLink.classList.add('active');
+            }
+            
+            window.scrollTo(0, 0);
+            document.getElementById('nav-menu').classList.remove('active');
+        }
+
+        var navLinks = document.querySelectorAll('.nav-link');
+        for (var i = 0; i < navLinks.length; i++) {
+            navLinks[i].addEventListener('click', function() {
+                var pageId = this.getAttribute('data-page');
+                showPage(pageId);
+            });
+        }
+
+        function toggleMenu() {
+            document.getElementById('nav-menu').classList.toggle('active');
+        }
+
+        function submitForm(event) {
+            event.preventDefault();
+            alert('✅ تم إرسال طلبك بنجاح!');
+            event.target.reset();
+        }
+
+
+
+
+    //     <iframe src="https://docs.google.com/forms/d/e/.../viewform?embedded=true" 
+    //     width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">
+    // جاري التحميل…
+    //  </iframe>
+    </script>
+</body>
+</html>
